@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu do Futuro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fde2e4; 
+            color: #2b2b2b;
+        }
+
+        header {
+            background-color: #2b1b28;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header p {
+            color: #ff9ebb; 
+            margin: 5px 0;
+        }
+
+        nav {
+            background-color: #4a2840;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        
+        nav a:hover {
+            color: #ff9ebb;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            border-bottom: 3px solid #ff85a1;
+            color: #5c1d38;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .destaque {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .destaque img {
+            width: 35%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .codigo {
+            color: #9c27b0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background-color: #ff85a1;
+            color: #ffffff;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .hipoteses {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        article {
+            flex: 1;
+            min-width: 200px;
+            background-color: #fff0f5;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid #ff85a1;
+        }
+
+        aside {
+            background-color: #2b1b28;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        aside h2, aside h3 {
+            color: #ff85a1;
+            border-bottom-color: #5c1d38;
+        }
+
+        blockquote {
+            border-left: 4px solid #ff85a1;
+            margin: 15px 0;
+            padding: 8px 15px;
+            font-style: italic;
+            background-color: #fff5f7;
+            color: #4a2840;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ffccd5;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #5c1d38;
+            color: white;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff0f5;
+        }
+
+        .alerta {
+            background-color: #fff1d6;
+            border-left: 6px solid #d59326;
+        }
+
+        footer {
+            background-color: #2b1b28;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 700px) {
+            .destaque, .hipoteses {
+                flex-direction: column;
+            }
+            .destaque img {
+                width: 100%;
+            }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>MUSEU DE ARQUEOLOGIA DIGITAL</p>
+        <h1>Arquivo Histórico - 2200</h1>
+        <p>Reconstruindo os misteriosos costumes da humanidade no Século XXI</p>
+    </header>
+
+    <nav>
+        <a href="#artefato">Artefato</a>
+        <a href="#descoberta">Descoberta</a>
+        <a href="#hipoteses">Hipóteses</a>
+        <a href="#evidencias">Evidências</a>
+        <a href="#arqueologo">Arqueólogos</a>
+    </nav>
+
+    <main>
+        <section id="artefato" class="destaque">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1632861341000" alt="AirPods no estojo">
+
+            <div>
+                <p class="codigo">ARTEFATO #AF-2026-011</p>
+                <h2>AirPods</h2>
+
+                <p class="etiqueta">
+                    Importância cultural: 10/10
+                </p>
+
+                <p>
+                    Artefato auditivo de bolso utilizado pela 
+                    civilização mundial do início do século XXI.
+                </p>
+
+                <p>
+                    Registros digitais sugerem que seu papel ultrapassava a 
+                    simples reprodução sonora, servindo como uma barreira social invisível.
+                </p>
+
+                <p>
+                    Alguns habitantes da época chegaram a declarar:
+                </p>
+
+                <blockquote>"Sem AirPods eu nem saio de casa"</blockquote>
+            </div>
+        </section>
+
+        <section id="descoberta">
+            <h2>Local da descoberta</h2>
+
+            <p>
+                O artefato foi encontrado em 24 de setembro de 2124 durante uma 
+                escavação nas ruínas de um antigo condomínio residencial.
+            </p>
+
+            <p>
+                <strong>Local histórico:</strong> 
+                Sorocaba, antiga região denominada interior de São Paulo, Brasil.
+            </p>
+              
+            <p>
+                O estojo de carregamento foi encontrado dentro de uma cápsula de tecido rígido que 
+                os registros históricos chamavam de <strong>"bolso"</strong>, enquanto um dos fones estava perdido no fundo de um estofado.
+            </p>
+
+            <h3>Objetos encontrados próximos</h3>
+
+            <ul>
+                <li>Cabo Lightning ressecado</li>
+                <li>MIGALHAS DE BISCOITO (preservadas em poeira)</li>
+                <li>Pedaço de borracha(pedacinho do fone)</li>
+                <li>Chaveiro com pingente desgastado</li>
+            </ul>
+
+            <blockquote>
+                "Procurar no bolso do casaco!!"
+            </blockquote>
+
+            <p>
+                Até hoje os arqueólogos tentam entender por que o fone esquerdo desaparecia com mais frequência que o direito.
+            </p>
+        </section>
+
+        <section>
+            <h2>Descrição Física</h2>
+
+            <p>
+                O conjunto consiste em duas pequenas peças plásticas em formato de graveto/gota e um estojo oval retangular com tampa magnética.
+            </p>
+
+            <p>
+                <strong>Altura do estojo:</strong> aproximadamente 5 cm <br>
+                <strong>Peso:</strong> aproximadamente 50 g <br>
+                <strong>Material:</strong> polímero plástico branco <br>
+                <strong>Fonte energética:</strong> bateria microscópica de lítio <br>
+            </p>
+
+            <p>
+                Durante alguns anos de descobertas, acreditou-se que o estojo era uma caixa de sabonete em miniatura ou um porta-balas de emergência.
+            </p>
+        </section>
+
+        <section>
+            <h2>Função provável</h2>
+
+            <p>
+                Simulações indicam que os AirPods transmitiam ondas sonoras via protocolo antigo chamado <em>Bluetooth</em> diretamente para o canal auditivo.
+            </p>
+
+            <p>
+                Entretanto, a quantidade de registros encontrados sugere que sua função principal era ignorar outras pessoas em ambientes públicos sem parecer indelicado.
+            </p>
+
+            <blockquote>"Coloquei o fone para não ter que conversar no elevador."</blockquote>
+
+            <blockquote>"Cancelamento de ruído ativado."</blockquote>
+
+            <p> 
+                A expressão "Modo Transparência" gerou décadas de discussão entre historiadores sobre se os humanos buscavam invisibilidade ou telepatia.
+            </p>
+        </section>
+
+        <section id="hipoteses">
+            <h2>Principais hipóteses arqueológicas</h2>
+            
+            <div class="hipoteses">
+                <article>
+                    <h3>Hipótese A</h3>
+                    <p><strong>Utensílio de isolamento social</strong></p>
+                    <p>A teoria mais aceita afirma que o objeto servia como um amuleto que sinalizava aos outros humanos: "Não fale comigo agora".</p>
+                </article>
+
+                <article>
+                    <h3>Hipótese B</h3>
+                    <p><strong>Símbolo de status e adorno auricular</strong></p>
+                    <p>Alguns pesquisadores acreditam que ostentar pequenas hastes brancas penduradas na orelha demonstrava alto nível socioeconômico.</p>
+                </article>
+
+                <article>
+                    <h3>Hipótese C</h3>
+                    <p><strong>Aparelho de amplificação de pensamentos</strong></p>
+                    <p>Esta teoria afirma que, como os humanos falavam sozinhos enquanto usavam o objeto na rua, ele servia para exteriorizar monólogos internos.</p>
+                </article>
+
+                <article>
+                    <h3>Hipótese D</h3>
+                    <p><strong>Aparelho de testes de paciência</strong></p>
+                    <p>Esta teoria afirma que o artefato era projetado para cair no ralo do banheiro ou no trilho do metrô para testar os reflexos da espécie.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reconstrução do ritual de uso</h2>
+
+            <ol>
+                <li>Abrir a tampa do estojo e ouvir um clique magnético satisfatório.</li>
+                <li>Encaixar as hastes na orelha e esperar o som sintético de confirmação.</li>
+                <li>Perceber que um dos lados está com 1% de bateria.</li>
+            </ol>
+        </section>
+
+        <section id="evidencias">
+            <h2>Evidências linguísticas</h2>
+
+            <p>
+                A interpretação da linguagem brasileira do século XXI sobre áudios e músicas foi uma das maiores dificuldades da equipe.
+            </p>
+
+            <table>
+                <tr>
+                    <th>Expressão encontrada</th>
+                    <th>Interpretação em 2200</th>
+                </tr>
+
+                <tr>
+                    <td>Caiu no ralo</td>
+                    <td>Perda irrecuperável de bem sagrado</td>
+                </tr>
+
+                <tr>
+                    <td>Áudio de 5 minutos</td>
+                    <td>Ataque psicológico ou podcast não solicitado</td>
+                </tr>
+
+                <tr>
+                    <td>Aumenta que essa é boa</td>
+                    <td>Rito de aceleração de ondas sonoras</td>
+                </tr>
+
+                <tr>
+                    <td>Cadê meu fone?</td>
+                    <td>Mantra de desespero pronunciado diariamente</td>
+                </tr>
+
+                <tr>
+                    <td>Tô ouvindo em 2x</td>
+                    <td>Incapacidade cronológica de processar tempo normal</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Fragmentos digitais recuperados</h2>
+
+            <p>
+                Diversos vídeos foram recuperados de uma antiga plataforma chamada <strong>TikTok</strong>.
+            </p>
+
+            <p>
+                Muitos mostravam humanos dançando sozinhos em locais públicos em frente a uma câmera estática.
+            </p>
+
+            <blockquote>
+                "POV: Você esqueceu seus AirPods e teve que ouvir o som do mundo real"
+            </blockquote>
+
+            <p>
+                Análises indicam que o som ambiente sem filtro causava desconforto severo aos habitantes daquela era.
+            </p>
+        </section>
+
+        <aside id="arqueologo">
+            <h2>Comentários do Arqueólogo</h2>
+
+            <h3>Dr. Thomas Resta Bersi de leonardo</h3>
+
+            <p>
+                Instituto de Arqueologia Doméstica - 2200
+            </p>
+
+            <blockquote>
+                Durante muito tempo acreditamos que as pessoas do início do século XXI falavam sozinhas devido a algum surto telepático global.
+            </blockquote>
+
+            <blockquote>
+                Entretanto, descobrimos microfones minúsculos nessas hastes brancas que captavam a voz enquanto caminhavam pelas ruas.
+            </blockquote>
+
+            <p>
+                Atualmente trabalhamos com a hipótese de que o silêncio era uma mercadoria tão rara em 2026 que eles precisavam comprar pequenos aparelhos para simular a ausência de civilização ao redor.
+            </p>
+        </aside>
+
+        <section>
+            <h2>Teorias rejeitadas</h2>
+
+            <h3>Protetor de cera auricular</h3>
+
+            <p>
+                Acreditou-se que a ponta de silicone tinha função primária de higiene pessoal. Hipótese abandonada após análise de resíduos biológicos acumulados nos alto-falantes.
+            </p>
+
+            <h3>Brincos cibernéticos</h3>
+
+            <p>
+                Outro grupo defendeu que era apenas uma joia futurista sem função eletrônica. A teoria caiu ao identificarem circuitos integrados.
+            </p>
+        </section>
+
+        <section>
+            <h2>Perguntas sem respostas</h2>
+            <ul>
+                <li>Por que o fone esquerdo descarregava mais rápido que o direito?</li>
+                <li>Por que as pessoas continuavam falando mesmo quando o interlocutor tirava apenas um fone?</li>
+                <li>Como o estojo acumulava sujeira interna mesmo estando sempre fechado?</li>
+            </ul>
+        </section>
+
+        <section class="alerta">
+            <h2>Nota de segurança do museu</h2>
+
+            <p>
+                Visitantes não devem tentar encaixar os AirPods encontrados no canal auditivo sem higienização e autorização do setor biobiológico.
+            </p>
+
+            <p>
+                O incidente com o pesquisador Almeida, que tentou ouvir uma lista de musica chamada "Hits de 2010", resultou em perda temporária de orginalidade e ainda está sob investigação.
+            </p>
+        </section>
+
+        <section>
+            <h2>Classificação final</h2>
+
+            <p>Nome conhecido: <strong>AirPods / Fones TWS</strong></p>
+
+            <p>Nome arqueológico: <strong>Receptor e Emissor Sonoro Sem Fio</strong></p>
+
+            <p>Civilização: Sociedade Digital Pré-Singularidade</p>
+
+            <p>Período: aproximadamente 2016-2035</p>
+
+            <p>Uso confirmado: <strong>Escutar áudios e músicas</strong></p>
+
+            <p>Uso simbólico (Evitar interação humana): <strong>89%</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Museu de Arqueologia Digital - Ano 2200</p>
+        <p>Departamento de Estudos de Estranhas Civilizações do Século XXI</p>
+    </footer>
+</body>
+</html>
